@@ -1,0 +1,45 @@
+body {
+  padding-top: 5rem;
+  background-color: #dff5f2
+}
+
+
+#main_title {
+  color: #219481;
+}
+
+#sketchpadapp {
+    /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.buttons {
+    float:left;
+    width:220px;
+    height:50px;
+    padding:10px;
+    border-radius:4px;
+}
+.drawing {
+    float:left;
+    margin-left:10px;
+}
+
+#sketchpad {
+    float:left;
+    height:300px;
+    width:400px;
+    border:2px solid #888;
+    border-radius:4px;
+    position:relative; /* Necessary for correct mouse co-ords in Firefox */
+}
+#clearbutton {
+    font-size: 15px;
+    padding: 10px;
+    -webkit-appearance: none;
+    background: #f2c9f1;
+}
