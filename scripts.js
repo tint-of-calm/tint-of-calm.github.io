@@ -4,7 +4,7 @@ var iro = iro
 var colorPicker = new iro.ColorPicker(".colorPicker", {
   // Color picker options
   // Option guide: https://iro.js.org/guide.html#color-picker-options
-  width: 100,
+  width: 80,
   color: "rgb(255, 0, 0)",
   borderWidth: 1,
   borderColor: "#fff",
@@ -156,4 +156,10 @@ function init() {
         canvas.addEventListener('touchstart', sketchpad_touchStart, false);
         canvas.addEventListener('touchmove', sketchpad_touchMove, false);
     }
+}
+
+// Move to next pageX
+
+function nextPage() {
+window.location.href = "http://example.com/new_url";
 }
