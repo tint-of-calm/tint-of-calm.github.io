@@ -3,36 +3,79 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" href="styles.css"/>
+
+    <script type="text/javascript" src="/Users/sarahardin/Documents/GitHub/website/packages/iro/iro.js"></script>
     <script type="text/javascript" src="scripts.js" async></script>
 
   </head>
 
-  <title>Tint of calm</title>
+  <title>A tint of calm</title>
 
 <body onload="init()">
 
-  <h1 id='main_title'> Tint of calm </h1>
+  <h1 id='main_title'> A tint of calm </h1>
 
-  <input type="color" id="html5colorpicker" value="#4287f5" style="width:85%;">
+  <div class=column>
+    Sit back, relax and choose a picture to colour in.
 
-  <div id="sketchpadapp">
+  <div class="image_selector">
+    <input class="image" id="image1" type="image"
+    src="https://images.squarespace-cdn.com/content/v1/51603d39e4b0e13a25868eae/1499713607674-YNEKTRTR61UUAY39IHDU/ke17ZwdGBToddI8pDm48kKIMDjAtslzpSbNWOLTaRwx7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmS0k9nmfOWkBD2X4dgpGrpfvUWmq0O8-xzDea1HwyPHZEWk-7rT3ush37ttw9UQzO/ChevronTile"
+    onclick="selectimage('image1')" />
 
-      <div class="drawing">
-       <canvas id="sketchpad" height="300" width="400">
-       </canvas>
+    <input class="image" id="image2" type="image"
+    src="https://st.depositphotos.com/1388281/1343/v/950/depositphotos_13435957-stock-illustration-abstract-black-white-design.jpg"
+    onclick="selectimage('image2')"/>
+
+    <input class="image" id="image3" type="image"
+    src="https://images-na.ssl-images-amazon.com/images/I/61Z2JVe10wL._SY300_QL70_.jpg"
+    onclick="selectimage('image3')"/>
+
+    <input class="image" id="image4" type="image"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT99PBykyf6guvoaDh7tMzRtFXhoENT6JZzH6dQiu06elUOKzht&s"
+    onclick="selectimage('image4')"/>
+
+    <input class="image" id="image5" type="image"
+    src="https://cdn.shopify.com/s/files/1/0285/1316/products/JUB-0030-WALP-WP-1_2048x.JPG?v=1560158733"
+    onclick="selectimage('image5')"/>
+
+  </div>
+
+
+      <div id="sketchpadapp">
+          <div class="drawing">
+                <canvas id="sketchpad" width=500 height=400>
+                </canvas>
+          </div>
       </div>
 
-      <div class="buttons">
-          <input type="submit" value="I want to start again" id="clearbutton" onclick="clearCanvas(canvas,ctx);">
-      </div>
+  <div>
 
+  </div>
+  <div class=column1>
+    <div id="color-picker-container">
+      <div class='colorPicker'></div>
+    </div>
+  </div>
 
+  <div class= column1>
+    <div class="buttons">
+      <input type="submit" value="Clear all" id="clearbutton" onclick="clearCanvas(canvas,ctx);">
+    </div>
+  </div>
 
 
 
 
   </div>
+
+
+      </div>
+
+
+
 
  </body>
 </html>

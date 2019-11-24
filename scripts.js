@@ -1,22 +1,47 @@
-// Colours
-select_colour = document.getElementById("html5colorpicker").value
+var iro = iro
 
-document.getElementById("html5colorpicker").onchange = function() {
-  select_colour = document.getElementById("html5colorpicker").value;
+// Create a new color picker instance
+// https://iro.js.org/guide.html#getting-started
+var colorPicker = new iro.ColorPicker(".colorPicker", {
+  // color picker options
+  // Option guide: https://iro.js.org/guide.html#color-picker-options
+  width: 100,
+  color: "rgb(255, 0, 0)",
+  borderWidth: 1,
+  borderColor: "#fff",
+  handleRadius: 2
+});
+
+
+var select_colour = colorPicker.color.hexString;
+
+function onColorChange(color, changes) {
+  select_colour = (color.hexString);
 }
+
+colorPicker.on('color:change', onColorChange);
+
+
 
 
 // image fill
 var context = document.getElementById("sketchpad").getContext("2d");
 var image = new Image();
 
-function drawPattern() {
+image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT99PBykyf6guvoaDh7tMzRtFXhoENT6JZzH6dQiu06elUOKzht&s"
 
+function drawPattern() {
     context.fillStyle = context.createPattern(image, "repeat");
-    context.fillRect(0, 0, 400, 400);
+    context.fillRect(0, 0, 500, 500);
 }
 
-image.src = "https://azure.wgp-cdn.co.uk/app-yourcat/posts/catcolour2.jpg";
+function selectimage(imagenumber) {
+    image.src = document.getElementById(imagenumber).src;
+    //document.getElementById('sketchpad').src = imagesource
+
+}
+
+//image.src = ;
 image.onload = drawPattern;
 
 

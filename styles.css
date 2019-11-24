@@ -1,22 +1,38 @@
 body {
-  padding-top: 5rem;
-  background-color: #dff5f2
+  background-image: url("https://images.homedepot-static.com/productImages/5533b6d9-37b4-4e8d-9aae-655ef6b9c49e/svn/chesapeake-wallpaper-has01233-64_1000.jpg");
+  max-width: 600px;
+  margin: auto;
+  width: 95%;
+  color: #000080;
 }
-
 
 #main_title {
-  color: #219481;
+  color: #000080;
+  font-family: "Lucida Console";
 }
 
-#sketchpadapp {
-    /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.image_selector{
+  margin-bottom: 5px
 }
+
+.column {
+  float: left;
+  width: 100%;
+}
+
+
+.column1 {
+  float: left;
+  width: 100px;
+}
+
+#color-picker-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  float: left;
+}
+
 .buttons {
     float:left;
     width:220px;
@@ -24,22 +40,15 @@ body {
     padding:10px;
     border-radius:4px;
 }
-.drawing {
-    float:left;
-    margin-left:10px;
-}
 
-#sketchpad {
-    float:left;
-    height:300px;
-    width:400px;
-    border:2px solid #888;
-    border-radius:4px;
-    position:relative; /* Necessary for correct mouse co-ords in Firefox */
-}
 #clearbutton {
     font-size: 15px;
     padding: 10px;
     -webkit-appearance: none;
-    background: #f2c9f1;
+    background: #000080;
+    color: #dff5f2;
+}
+
+.image{
+  width:75px;
 }
