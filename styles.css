@@ -92,7 +92,7 @@ body {
     color: #dff5f2;
 }
 
-#nextpage {
+.navButton {
   font-size: 15px;
   padding: 10px;
   -webkit-appearance: none;

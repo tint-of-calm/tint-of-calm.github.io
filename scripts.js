@@ -158,8 +158,12 @@ function init() {
     }
 }
 
-// Move to next pageX
+// Move between pages
 
-function nextPage() {
-window.location.href = "http://example.com/new_url";
+function cheerPage() {
+window.location.href = "file:///Users/sarahardin/Documents/GitHub/website/cheer_up.html";
+}
+
+function homePage() {
+window.location.href = "file:///Users/sarahardin/Documents/GitHub/website/index.html";
 }
