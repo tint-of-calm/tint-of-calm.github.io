@@ -11,15 +11,23 @@ body {
   font-family: "Lucida Console";
 }
 
-.image_selector{
-  margin-bottom: 5px
-}
-
 .column {
   float: left;
   width: 100%;
 }
 
+.text{
+  font-family: "Lucida Console";
+  font-size: 18px
+}
+
+.image_selector{
+  margin-bottom: 5px
+}
+
+.image{
+  width:75px;
+}
 
 .column1 {
   float: left;
@@ -47,8 +55,4 @@ body {
     -webkit-appearance: none;
     background: #000080;
     color: #dff5f2;
-}
-
-.image{
-  width:75px;
 }

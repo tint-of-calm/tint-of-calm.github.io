@@ -3,24 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="styles.css"/>
-
     <script type="text/javascript" src="/Users/sarahardin/Documents/GitHub/website/packages/iro/iro.js"></script>
     <script type="text/javascript" src="scripts.js" async></script>
-
   </head>
 
   <title>A tint of calm</title>
 
 <body onload="init()">
-
   <h1 id='main_title'> A tint of calm </h1>
 
   <div class=column>
+    <div class="text">
     Sit back, relax and choose a picture to colour in.
+    </div>
 
-  <div class="image_selector">
+    <div class="image_selector">
     <input class="image" id="image1" type="image"
     src="https://images.squarespace-cdn.com/content/v1/51603d39e4b0e13a25868eae/1499713607674-YNEKTRTR61UUAY39IHDU/ke17ZwdGBToddI8pDm48kKIMDjAtslzpSbNWOLTaRwx7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmS0k9nmfOWkBD2X4dgpGrpfvUWmq0O8-xzDea1HwyPHZEWk-7rT3ush37ttw9UQzO/ChevronTile"
     onclick="selectimage('image1')" />
@@ -40,23 +38,20 @@
     <input class="image" id="image5" type="image"
     src="https://cdn.shopify.com/s/files/1/0285/1316/products/JUB-0030-WALP-WP-1_2048x.JPG?v=1560158733"
     onclick="selectimage('image5')"/>
+    </div>
 
-  </div>
-
-
-      <div id="sketchpadapp">
-          <div class="drawing">
-                <canvas id="sketchpad" width=500 height=400>
-                </canvas>
-          </div>
+    <div id="sketchpadapp">
+      <div class="drawing">
+        <canvas id="sketchpad" width=500 height=400>
+        </canvas>
       </div>
-
-  <div>
-
+    </div>
   </div>
+
   <div class=column1>
     <div id="color-picker-container">
-      <div class='colorPicker'></div>
+      <div class='colorPicker'>
+      </div>
     </div>
   </div>
 
@@ -65,17 +60,6 @@
       <input type="submit" value="Clear all" id="clearbutton" onclick="clearCanvas(canvas,ctx);">
     </div>
   </div>
-
-
-
-
-  </div>
-
-
-      </div>
-
-
-
 
  </body>
 </html>
