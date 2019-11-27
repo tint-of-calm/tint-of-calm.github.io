@@ -27,7 +27,7 @@ image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT99PBykyf6guv
 
 function drawPattern() {
     context.fillStyle = context.createPattern(image, "repeat");
-    context.fillRect(0, 0, 500, 500);
+    context.fillRect(0, 0, 500, 400);
 }
 
 function selectimage(imagenumber) {

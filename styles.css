@@ -1,14 +1,14 @@
 body {
   background-image: url("https://images.homedepot-static.com/productImages/5533b6d9-37b4-4e8d-9aae-655ef6b9c49e/svn/chesapeake-wallpaper-has01233-64_1000.jpg");
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
   width: 95%;
   color: #000080;
+  font-family: 'Courgette', cursive;; //cursive is a backup
 }
 
 #main_title {
   color: #000080;
-  font-family: "Lucida Console";
   letter-spacing: 3px;
   margin-bottom: 3px;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 .text{
-  font-family: "Lucida Console";
+  font-family: "Lucida Console", serif;
   font-size: 22px;
   letter-spacing: 1px;
   margin: 0;
@@ -67,7 +67,7 @@ body {
 
 .column2 {
   float: left;
-  width: 150px;
+  width: 200px;
 }
 
 #color-picker-container {
@@ -82,6 +82,10 @@ body {
     height:50px;
     padding:10px;
     border-radius:4px;
+}
+
+input[type=button] {
+  font-family: "Lucida Console", serif;
 }
 
 #clearbutton {
