@@ -165,5 +165,5 @@ window.location.href = "https://tint-of-calm.github.io/cheer_up";
 }
 
 function homePage() {
-window.location.href = "tint-of-calm.github.io";
+window.location.href = "https://tint-of-calm.github.io";
 }
