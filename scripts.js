@@ -161,9 +161,9 @@ function init() {
 // Move between pages
 
 function cheerPage() {
-window.location.href = "file:///Users/sarahardin/Documents/GitHub/website/cheer_up.html";
+window.location.href = "https://tint-of-calm.github.io/tintofcalm.github.io/cheer_up";
 }
 
 function homePage() {
-window.location.href = "file:///Users/sarahardin/Documents/GitHub/website/index.html";
+window.location.href = "https://tint-of-calm.github.io/tintofcalm.github.io/";
 }
