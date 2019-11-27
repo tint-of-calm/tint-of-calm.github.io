@@ -15,7 +15,6 @@ body {
 
 .column {
   float: left;
-  width: 100%;
 }
 
 .text{
@@ -67,7 +66,7 @@ body {
 
 .column2 {
   float: left;
-  width: 200px;
+  width: 180px;
 }
 
 #color-picker-container {
@@ -79,17 +78,17 @@ body {
 
 .buttons {
     float:left;
-    height:50px;
     padding:10px;
     border-radius:4px;
+    margin-left: 40px;
 }
 
 input[type=button] {
   font-family: "Lucida Console", serif;
 }
-
 #clearbutton {
     font-size: 15px;
+    height: 75px;
     padding: 10px;
     -webkit-appearance: none;
     background: #000080;
