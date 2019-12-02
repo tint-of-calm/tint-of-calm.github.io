@@ -13,8 +13,21 @@ body {
   margin-bottom: 3px;
 }
 
+
 .column {
   float: left;
+  width: 100vw;
+  grid-row: 1;
+}
+
+.column1 {
+  float: left;
+  width: 100px;
+}
+
+.column2 {
+  float: left;
+  width: 180px;
 }
 
 .text{
@@ -22,6 +35,7 @@ body {
   font-size: 22px;
   letter-spacing: 1px;
   margin: 0;
+  overflow-wrap: break-word;
 }
 
 .image_selector{
@@ -54,19 +68,13 @@ body {
   width: 90px;
 }
 
+.imageBig{
+  width: 500px;
+}
+
 #sketchpad{
   border-style: double;
   border-radius:4px;
-}
-
-.column1 {
-  float: left;
-  width: 100px;
-}
-
-.column2 {
-  float: left;
-  width: 180px;
 }
 
 #color-picker-container {
@@ -80,16 +88,13 @@ body {
     float:left;
     padding:10px;
     border-radius:4px;
-    margin-left: 40px;
 }
 
-input[type=button] {
-  font-family: "Lucida Console", serif;
-}
 #clearbutton {
     font-size: 15px;
     height: 75px;
     padding: 10px;
+    margin-left: 40px;
     -webkit-appearance: none;
     background: #000080;
     color: #dff5f2;
@@ -98,6 +103,7 @@ input[type=button] {
 .navButton {
   font-size: 15px;
   padding: 10px;
+  margin-left: 40px;
   -webkit-appearance: none;
   background: #000080;
   color: #dff5f2;
